@@ -1,5 +1,6 @@
  <div class="container">   
     <h1>Quotations</h1>
+
     <!-- Using bootstrap +/- 3.7 although it's outdated  - bulma/bootstrap 4 ? --> 
     <table class='table table-sriped'>
             <tr class="info">
@@ -11,7 +12,7 @@
             <tr>
                 <td><%= quote.quotation %></td>
                 <!-- some 'bad' usage of timestamp ;) -->
-                <td><%= quote.created_at %></td>      
+                <td><%= localize(quote.created_at, format: :long) %></td>      
             </tr>
         <% end %>
     </table>
