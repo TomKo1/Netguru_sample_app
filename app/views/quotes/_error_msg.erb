@@ -1,0 +1,11 @@
+<div class="container">
+    <% if @quote.errors.any?%>
+    <div class="alert alert-danger">
+        <ul>
+            <% @quote.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+        </ul>
+    </div>
+    <% end %>
+</div>

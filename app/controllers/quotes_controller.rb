@@ -1,7 +1,7 @@
 class QuotesController < ApplicationController
 
     def index
-        <!-- some sort of pagination ? -->
+        # some sort of pagination ?
         @quotes = Quote.order(created_at: :desc)
     end
 
