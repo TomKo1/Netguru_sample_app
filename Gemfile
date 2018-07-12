@@ -41,6 +41,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # rspec for testing 
   gem 'rspec-rails', '~> 3.7'
+  # for controller testing
+  gem 'rails-controller-testing'
 end
 
 group :development do
