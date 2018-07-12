@@ -1,0 +1,18 @@
+ <div class="container">   
+    <h1>Quotations</h1>
+    <!-- Using bootstrap +/- 3.7 although it's outdated  - bulma/bootstrap 4 ? --> 
+    <table class='table table-sriped'>
+            <tr class="info">
+                <th>Quotation</th>
+                <th>Posted at</th>
+            </tr>    
+
+        <% @quotes.each do |quote| %> 
+            <tr>
+                <td><%= quote.quotation %></td>
+                <!-- some 'bad' usage of timestamp ;) -->
+                <td><%= quote.created_at %></td>      
+            </tr>
+        <% end %>
+    </table>
+</div>
